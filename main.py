@@ -33,7 +33,7 @@ def write_failed_wallet(address: str):
         f.write(f'{address}\n')
 
 def write_success_wallet(address: str):
-    with open('success.txt', 'a', encoding="utf-8") as f:
+    with open('balance.txt', 'a', encoding="utf-8") as f:
         f.write(f'{address}\n')
 
 async def get_balance():
